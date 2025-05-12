@@ -63,6 +63,10 @@
 
 
 
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css">
+
+
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
@@ -133,11 +137,39 @@
           
           
           
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
-                <i class="iconfont icon-archive-fill"></i>
-                <span>artical</span>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-books"></i>
+                <span>article</span>
               </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/archives/" target="_self">
+                    <i class="iconfont icon-archive-fill"></i>
+                    <span>article</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/" target="_self">
+                    <i class="iconfont icon-category-fill"></i>
+                    <span>category</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/tags/" target="_self">
+                    <i class="iconfont icon-tags-fill"></i>
+                    <span>tag</span>
+                  </a>
+                
+              </div>
             </li>
           
         
@@ -146,9 +178,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/categories/" target="_self">
-                <i class="iconfont icon-category-fill"></i>
-                <span>category</span>
+              <a class="nav-link" href="/music/" target="_self">
+                <i class="iconfont icon-music"></i>
+                <span>music</span>
               </a>
             </li>
           
@@ -240,6 +272,57 @@
 <div class="category-list">
   
   
+    
+    
+    
+    <div class="category row nomargin-x">
+      <a class="category-item collapsed
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="心理"
+        id="heading-3945f35020c23952056cf68f70a880d2" role="tab" data-toggle="collapse" href="#collapse-3945f35020c23952056cf68f70a880d2"
+        aria-expanded="false"
+      >
+        心理
+        <span class="list-group-count"></span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+        <a href="/categories/%E5%BF%83%E7%90%86/" class="category-count col-2 col-md-1 col-xm-1">
+          <i class="iconfont icon-articles"></i>
+          <span>2</span>
+        </a>
+      
+      <div class="category-collapse collapse " id="collapse-3945f35020c23952056cf68f70a880d2"
+           role="tabpanel" aria-labelledby="heading-3945f35020c23952056cf68f70a880d2">
+        
+        
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/2025/05/12/%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%B2%9F%E9%80%9A/" title="非暴力沟通"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">非暴力沟通</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2025/05/12/%E4%BA%BA%E9%99%85%E5%85%B3%E7%B3%BB%E5%BF%83%E7%90%86%E5%AD%A6/" title="人际关系心理学"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">人际关系心理学</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
+    </div>
+  
 </div>
 
 
@@ -281,13 +364,19 @@
     
 
     
+      <div class="col-lg-7 mx-auto nopadding-x-md">
+        <div class="container custom mx-auto">
+           <!--音乐--> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css"> <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script> 
+        </div>
+      </div>
+    
   </main>
 
   <footer>
     <div class="footer-inner">
   
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div id="player" class="aplayer aplayer-withlist aplayer-fixed" data-id="13706919703" data-server="netease" data-type="playlist" data-order="random" data-fixed="true" data-listfolded="true" data-theme="#2D8CF0"></div> 
     </div>
   
   
@@ -344,6 +433,11 @@
   <script  src="/js/local-search.js" ></script>
 
 
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@latest/dist/Meting.min.js"></script>
 
 
 

@@ -63,6 +63,10 @@
 
 
 
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css">
+
+
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
@@ -133,11 +137,39 @@
           
           
           
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
-                <i class="iconfont icon-archive-fill"></i>
-                <span>artical</span>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-books"></i>
+                <span>article</span>
               </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/archives/" target="_self">
+                    <i class="iconfont icon-archive-fill"></i>
+                    <span>article</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/" target="_self">
+                    <i class="iconfont icon-category-fill"></i>
+                    <span>category</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/tags/" target="_self">
+                    <i class="iconfont icon-tags-fill"></i>
+                    <span>tag</span>
+                  </a>
+                
+              </div>
             </li>
           
         
@@ -146,9 +178,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/categories/" target="_self">
-                <i class="iconfont icon-category-fill"></i>
-                <span>category</span>
+              <a class="nav-link" href="/music/" target="_self">
+                <i class="iconfont icon-music"></i>
+                <span>music</span>
               </a>
             </li>
           
@@ -266,6 +298,27 @@
           </div>
         
         
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%BF%83%E7%90%86/" class="category-chain-item">心理</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
         
       </div>
     </article>
@@ -313,13 +366,19 @@
     
 
     
+      <div class="col-lg-7 mx-auto nopadding-x-md">
+        <div class="container custom mx-auto">
+           <!--音乐--> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css"> <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script> 
+        </div>
+      </div>
+    
   </main>
 
   <footer>
     <div class="footer-inner">
   
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div id="player" class="aplayer aplayer-withlist aplayer-fixed" data-id="13706919703" data-server="netease" data-type="playlist" data-order="random" data-fixed="true" data-listfolded="true" data-theme="#2D8CF0"></div> 
     </div>
   
   
@@ -376,6 +435,11 @@
   <script  src="/js/local-search.js" ></script>
 
 
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@latest/dist/Meting.min.js"></script>
 
 
 
