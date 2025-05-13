@@ -1,0 +1,377 @@
+{
+  "SwitchMode": 0,
+  "RemoveAllExpKeys": [
+    0,
+    0,
+    0
+  ],
+  "MotionShortcutKeyDatas": {
+    "Animation/右手.motion3.json": {
+      "MotionName": "Animation/右手.motion3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "PlayMaxTime": 0.0,
+      "Mode": 0,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "FadeDuration": 0.5
+    },
+    "Animation/左手.motion3.json": {
+      "MotionName": "Animation/左手.motion3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "PlayMaxTime": 0.0,
+      "Mode": 0,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "FadeDuration": 0.5
+    },
+    "Animation/开场.motion3.json": {
+      "MotionName": "Animation/开场.motion3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "PlayMaxTime": 0.0,
+      "Mode": 0,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "FadeDuration": 0.5
+    },
+    "Animation/待机.motion3.json": {
+      "MotionName": "Animation/待机.motion3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "PlayMaxTime": 0.0,
+      "Mode": 0,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "FadeDuration": 0.5
+    },
+    "Animation/流泪.motion3.json": {
+      "MotionName": "Animation/流泪.motion3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "PlayMaxTime": 0.0,
+      "Mode": 0,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "FadeDuration": 0.5
+    }
+  },
+  "ExpShortcutKeyDatas": {
+    "Emotion/E-Body-Coat.exp3.json": {
+      "ExpName": "Emotion/E-Body-Coat.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "Emotion/E-Eye-Block.exp3.json": {
+      "ExpName": "Emotion/E-Eye-Block.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "Emotion/E-Eye-Blue.exp3.json": {
+      "ExpName": "Emotion/E-Eye-Blue.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "Emotion/E-Eye-Fog.exp3.json": {
+      "ExpName": "Emotion/E-Eye-Fog.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "Emotion/E-Eye-Glasses.exp3.json": {
+      "ExpName": "Emotion/E-Eye-Glasses.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "Emotion/E-Eye-Heart.exp3.json": {
+      "ExpName": "Emotion/E-Eye-Heart.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "Emotion/E-Eye-Shocked.exp3.json": {
+      "ExpName": "Emotion/E-Eye-Shocked.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "Emotion/E-Eye-Smile.exp3.json": {
+      "ExpName": "Emotion/E-Eye-Smile.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "Emotion/E-Eye-Star.exp3.json": {
+      "ExpName": "Emotion/E-Eye-Star.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "Emotion/E-Face-AllBlack.exp3.json": {
+      "ExpName": "Emotion/E-Face-AllBlack.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "Emotion/E-Face-Angry.exp3.json": {
+      "ExpName": "Emotion/E-Face-Angry.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "Emotion/E-Face-Black.exp3.json": {
+      "ExpName": "Emotion/E-Face-Black.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "Emotion/E-Face-Blood.exp3.json": {
+      "ExpName": "Emotion/E-Face-Blood.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "Emotion/E-Face-Music.exp3.json": {
+      "ExpName": "Emotion/E-Face-Music.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "Emotion/E-Face-Question.exp3.json": {
+      "ExpName": "Emotion/E-Face-Question.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "Emotion/E-Face-Shocked.exp3.json": {
+      "ExpName": "Emotion/E-Face-Shocked.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "Emotion/E-Face-Sweat.exp3.json": {
+      "ExpName": "Emotion/E-Face-Sweat.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "Emotion/E-Hair-HeadDress.exp3.json": {
+      "ExpName": "Emotion/E-Hair-HeadDress.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "Emotion/E-Hair-HeadDressLight.exp3.json": {
+      "ExpName": "Emotion/E-Hair-HeadDressLight.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "Emotion/E-Hair-Ponytail.exp3.json": {
+      "ExpName": "Emotion/E-Hair-Ponytail.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "Emotion/E-Machine-Open.exp3.json": {
+      "ExpName": "Emotion/E-Machine-Open.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "Emotion/E-Machine-Screen.exp3.json": {
+      "ExpName": "Emotion/E-Machine-Screen.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "Emotion/E-Mouth-Pout.exp3.json": {
+      "ExpName": "Emotion/E-Mouth-Pout.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "Emotion/E-Mouth-Shh.exp3.json": {
+      "ExpName": "Emotion/E-Mouth-Shh.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "Emotion/E-Mouth-Smile.exp3.json": {
+      "ExpName": "Emotion/E-Mouth-Smile.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    }
+  }
+}
