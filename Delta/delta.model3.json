@@ -1,1 +1,0 @@
-{"Version":3,"FileReferences":{"Moc":"Delta.moc3","Textures":["Delta.8192/texture_00.png"],"Physics":"Delta.physics3.json","UserData":"Delta.userdata3.json","DisplayInfo":"Delta.cdi3.json"},"Groups":[{"Target":"Parameter","Name":"LipSync","Ids":[]},{"Target":"Parameter","Name":"EyeBlink","Ids":["ParamEyeLOpen","ParamEyeROpen"]}]}
