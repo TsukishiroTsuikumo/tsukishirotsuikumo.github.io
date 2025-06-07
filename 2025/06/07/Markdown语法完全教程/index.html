@@ -1,0 +1,1794 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/128765914_p0_square1200.jpg">
+  <link rel="icon" href="/img/128765914_p0_square1200.jpg">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="月白追云">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="Markdown 语法详解本文完全由Claude Sonnet 4 生成，仅作为一个快速查阅的手册和参考使用。   1. 标题（Headings）Markdown 语法：   # 一级标题 ## 二级标题 ### 三级标题 #### 四级标题 ##### 五级标题 ###### 六级标题  对应 HTML：   &lt;h1&gt;一级标题&lt;&#x2F;h1&gt; &lt;h2&gt;二级标题&amp;lt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown 语法详解">
+<meta property="og:url" content="https://tsukishirotsuikumo.github.io/2025/06/07/Markdown%E8%AF%AD%E6%B3%95%E5%AE%8C%E5%85%A8%E6%95%99%E7%A8%8B/index.html">
+<meta property="og:site_name" content="月白のBlog">
+<meta property="og:description" content="Markdown 语法详解本文完全由Claude Sonnet 4 生成，仅作为一个快速查阅的手册和参考使用。   1. 标题（Headings）Markdown 语法：   # 一级标题 ## 二级标题 ### 三级标题 #### 四级标题 ##### 五级标题 ###### 六级标题  对应 HTML：   &lt;h1&gt;一级标题&lt;&#x2F;h1&gt; &lt;h2&gt;二级标题&amp;lt">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://placehold.co/200x100">
+<meta property="og:image" content="https://placehold.co/100x40">
+<meta property="article:published_time" content="2025-06-07T07:00:00.000Z">
+<meta property="article:modified_time" content="2025-06-07T11:05:47.343Z">
+<meta property="article:author" content="月白追云">
+<meta property="article:tag" content="Markdown">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://placehold.co/200x100">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>Markdown 语法详解 - 月白のBlog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"tsukishirotsuikumo.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"left","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2025-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>月白の神秘小屋</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-books"></i>
+                <span>article</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/archives/" target="_self">
+                    <i class="iconfont icon-archive-fill"></i>
+                    <span>article</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/" target="_self">
+                    <i class="iconfont icon-category-fill"></i>
+                    <span>category</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/tags/" target="_self">
+                    <i class="iconfont icon-tags-fill"></i>
+                    <span>tag</span>
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/Music/" target="_self">
+                <i class="iconfont icon-music"></i>
+                <span>music</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>about</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/tsukishirotsuikumo" target="_self">
+                <i class="iconfont icon-github-fill"></i>
+                <span>GitHub</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/c145f9b24e25113f4b3ca3508588901e1340190821.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Markdown 语法详解"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        月白追云
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-06-07 15:00" pubdate>
+          June 7, 2025 pm
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          5k words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          43 mins
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> views
+        </span>
+        
+
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="padding-left: 2rem; margin-right: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">Markdown 语法详解</h1>
+            
+              <p id="updated-time" class="note note-info" style="display: none">
+                
+                  
+                    Last updated on 2025-06-07T19:05:47+08:00
+                  
+                  
+
+                
+              </p>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="Markdown-语法详解"><a href="#Markdown-语法详解" class="headerlink" title="Markdown 语法详解"></a>Markdown 语法详解</h1><p>本文完全由Claude Sonnet 4 生成，仅作为一个快速查阅的手册和参考使用。  </p>
+<h2 id="1-标题（Headings）"><a href="#1-标题（Headings）" class="headerlink" title="1. 标题（Headings）"></a>1. 标题（Headings）</h2><p>Markdown 语法：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown"><span class="hljs-section"># 一级标题</span>
+<span class="hljs-section">## 二级标题</span>
+<span class="hljs-section">### 三级标题</span>
+<span class="hljs-section">#### 四级标题</span>
+<span class="hljs-section">##### 五级标题</span>
+<span class="hljs-section">###### 六级标题</span></code></pre></div>
+
+<p>对应 HTML：  </p>
+<div class="code-wrapper"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>一级标题<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>二级标题<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>三级标题<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>四级标题<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>五级标题<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h6</span>&gt;</span>六级标题<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span></code></pre></div>
+
+<h2 id="2-段落与换行"><a href="#2-段落与换行" class="headerlink" title="2. 段落与换行"></a>2. 段落与换行</h2><p>段落由一个或多个空行分隔。要强制换行，可在行末添加两个空格或使用 <code>&lt;br&gt;</code>。  </p>
+<p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown">第一段落内容。
+
+第二段落内容。
+
+这是第一行内容··  
+这是第二行内容</code></pre></div>
+
+<p>HTML：  </p>
+<div class="code-wrapper"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>第一段落内容。<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>第二段落内容。<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>这是第一行内容<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+这是第二行内容<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre></div>
+
+<p>渲染效果：  </p>
+<p>第一段落内容。</p>
+<p>第二段落内容。</p>
+<p>这是第一行内容<br>这是第二行内容</p>
+<hr>
+<h2 id="3-强调与加粗"><a href="#3-强调与加粗" class="headerlink" title="3. 强调与加粗"></a>3. 强调与加粗</h2><table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>HTML</th>
+<th>渲染效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>*斜体*</code> 或 <code>_斜体_</code></td>
+<td><code>&lt;em&gt;斜体&lt;/em&gt;</code></td>
+<td><em>斜体</em></td>
+</tr>
+<tr>
+<td><code>**加粗**</code> 或 <code>__加粗__</code></td>
+<td><code>&lt;strong&gt;加粗&lt;/strong&gt;</code></td>
+<td><strong>加粗</strong></td>
+</tr>
+<tr>
+<td><code>~~删除线~~</code></td>
+<td><code>&lt;del&gt;删除线&lt;/del&gt;</code></td>
+<td><del>删除线</del></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="4-列表（Lists）"><a href="#4-列表（Lists）" class="headerlink" title="4. 列表（Lists）"></a>4. 列表（Lists）</h2><h3 id="4-1-无序列表"><a href="#4-1-无序列表" class="headerlink" title="4.1 无序列表"></a>4.1 无序列表</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown"><span class="hljs-bullet">-</span> 苹果
+<span class="hljs-bullet">-</span> 香蕉
+<span class="hljs-bullet">  -</span> 脐橙
+<span class="hljs-bullet">  -</span> 血橙
+<span class="hljs-bullet">*</span> 或者星号
+<span class="hljs-bullet">+</span> 或者加号</code></pre></div>
+
+<p>HTML：  </p>
+<div class="code-wrapper"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>苹果<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>香蕉
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>脐橙<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>血橙<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>或者星号<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>或者加号<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre></div>
+
+<p>渲染效果：  </p>
+<ul>
+<li>苹果  </li>
+<li>香蕉    <ul>
+<li>脐橙  </li>
+<li>血橙</li>
+</ul>
+</li>
+<li>或者星号  </li>
+<li>或者加号</li>
+</ul>
+<h3 id="4-2-有序列表"><a href="#4-2-有序列表" class="headerlink" title="4.2 有序列表"></a>4.2 有序列表</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown"><span class="hljs-bullet">1.</span> 第一步
+<span class="hljs-bullet">2.</span> 第二步
+<span class="hljs-bullet">3.</span> 第三步
+<span class="hljs-bullet">   1.</span> 子步骤 a
+<span class="hljs-bullet">   2.</span> 子步骤 b</code></pre></div>
+
+<p>HTML：  </p>
+<div class="code-wrapper"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>第一步<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>第二步<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>第三步
+    <span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>子步骤 a<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>子步骤 b<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span></code></pre></div>
+
+<p>渲染效果：  </p>
+<ol>
+<li>第一步  </li>
+<li>第二步  </li>
+<li>第三步      <ol>
+<li>子步骤 a  </li>
+<li>子步骤 b</li>
+</ol>
+</li>
+</ol>
+<hr>
+<h2 id="5-链接（Links）"><a href="#5-链接（Links）" class="headerlink" title="5. 链接（Links）"></a>5. 链接（Links）</h2><h3 id="5-1-行内链接"><a href="#5-1-行内链接" class="headerlink" title="5.1 行内链接"></a>5.1 行内链接</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown">[<span class="hljs-string">Google</span>](<span class="hljs-link">https://www.google.com &quot;谷歌搜索&quot;</span>)</code></pre></div>
+
+<p>HTML：  </p>
+<div class="code-wrapper"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.google.com&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;谷歌搜索&quot;</span>&gt;</span>Google<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre></div>
+
+<p>渲染效果：<br><a target="_blank" rel="noopener" href="https://www.google.com/" title="谷歌搜索">Google</a></p>
+<h3 id="5-2-参考式链接"><a href="#5-2-参考式链接" class="headerlink" title="5.2 参考式链接"></a>5.2 参考式链接</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown">访问 [<span class="hljs-string">百度</span>][<span class="hljs-symbol">1</span>] 或 [<span class="hljs-string">GitHub</span>][<span class="hljs-symbol"></span>].
+
+[<span class="hljs-symbol">1</span>]: <span class="hljs-link">https://www.baidu.com &quot;百度搜索&quot;</span>
+[<span class="hljs-symbol">GitHub</span>]: <span class="hljs-link">https://github.com</span></code></pre></div>
+
+<p>渲染效果：<br>访问 <a target="_blank" rel="noopener" href="https://www.baidu.com/" title="百度搜索">百度</a> 或 <a target="_blank" rel="noopener" href="https://github.com/">GitHub</a></p>
+<hr>
+<h2 id="6-图片（Images）"><a href="#6-图片（Images）" class="headerlink" title="6. 图片（Images）"></a>6. 图片（Images）</h2><h3 id="6-1-行内图片"><a href="#6-1-行内图片" class="headerlink" title="6.1 行内图片"></a>6.1 行内图片</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown">![<span class="hljs-string">示例图片</span>](<span class="hljs-link">https://placehold.co/200x100 &quot;占位图&quot;</span>)</code></pre></div>
+
+<p>HTML：  </p>
+<div class="code-wrapper"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://placehold.co/200x100&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;示例图片&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;占位图&quot;</span>&gt;</span></code></pre></div>
+
+<p>渲染效果：<br><img src="https://placehold.co/200x100" srcset="/img/loading.gif" lazyload alt="示例图片" title="占位图"></p>
+<h3 id="6-2-参考式图片"><a href="#6-2-参考式图片" class="headerlink" title="6.2 参考式图片"></a>6.2 参考式图片</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown">![<span class="hljs-string">Logo</span>][<span class="hljs-symbol">logo</span>]
+
+[<span class="hljs-symbol">logo</span>]: <span class="hljs-link">https://placehold.co/100x40 &quot;公司 Logo&quot;</span></code></pre></div>
+
+<p>渲染效果：<br><img src="https://placehold.co/100x40" srcset="/img/loading.gif" lazyload alt="Logo" title="公司 Logo"></p>
+<hr>
+<h2 id="7-代码（Code）"><a href="#7-代码（Code）" class="headerlink" title="7. 代码（Code）"></a>7. 代码（Code）</h2><h3 id="7-1-内联代码"><a href="#7-1-内联代码" class="headerlink" title="7.1 内联代码"></a>7.1 内联代码</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown">使用 <span class="hljs-code">`console.log()`</span> 输出。</code></pre></div>
+
+<p>HTML：  </p>
+<div class="code-wrapper"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>使用 <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>console.log()<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> 输出。<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre></div>
+
+<p>渲染效果：<br>使用 <code>console.log()</code> 输出。</p>
+<h3 id="7-2-代码块"><a href="#7-2-代码块" class="headerlink" title="7.2 代码块"></a>7.2 代码块</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown"><span class="hljs-code">```javascript</span>
+<span class="hljs-code">function hello(name) &#123;</span>
+<span class="hljs-code">  return &quot;Hello, &quot; + name + &quot;!&quot;;</span>
+<span class="hljs-code">&#125;</span></code></pre></div>
+<div class="code-wrapper"><pre><code class="hljs xquery">
+HTML：  
+```html
+<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span></span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;language-javascript&quot;</span>&gt;</span></span>
+<span class="language-xml">function hello(name) </span><span class="language-xquery">&#123;</span>
+<span class="language-xquery">  <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Hello, &quot;</span> +<span class="hljs-built_in"> name</span> + <span class="hljs-string">&quot;!&quot;</span>;</span>
+<span class="language-xquery">&#125;</span><span class="language-xml"></span>
+<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span></span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span></span></code></pre></div>
+
+<p>渲染效果：  </p>
+<div class="code-wrapper"><pre><code class="hljs javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">hello</span>(<span class="hljs-params">name</span>) &#123;
+  <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Hello, &quot;</span> + name + <span class="hljs-string">&quot;!&quot;</span>;
+&#125;</code></pre></div>
+
+<hr>
+<h2 id="8-引用（Blockquotes）"><a href="#8-引用（Blockquotes）" class="headerlink" title="8. 引用（Blockquotes）"></a>8. 引用（Blockquotes）</h2><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown"><span class="hljs-quote">&gt; 这是一段引用文字。</span>
+<span class="hljs-quote">&gt; </span>
+<span class="hljs-quote">&gt; 可以跨多行。</span></code></pre></div>
+
+<p>HTML：  </p>
+<div class="code-wrapper"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>这是一段引用文字。<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>可以跨多行。<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span></code></pre></div>
+
+<p>渲染效果：  </p>
+<blockquote>
+<p>这是一段引用文字。<br>可以跨多行。</p>
+</blockquote>
+<hr>
+<h2 id="9-表格（Tables）"><a href="#9-表格（Tables）" class="headerlink" title="9. 表格（Tables）"></a>9. 表格（Tables）</h2><h3 id="9-1-基础表格"><a href="#9-1-基础表格" class="headerlink" title="9.1 基础表格"></a>9.1 基础表格</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown">| 姓名 | 年龄 | 职业   |
+| ---- | ---- | ------ |
+| 张三 | 25   | 工程师 |
+| 李四 | 30   | 设计师 |</code></pre></div>
+
+<p>HTML：  </p>
+<div class="code-wrapper"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>姓名<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>年龄<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>职业<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>张三<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>25<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>工程师<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>李四<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>30<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>设计师<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></code></pre></div>
+
+<p>渲染效果：</p>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th>年龄</th>
+<th>职业</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>张三</td>
+<td>25</td>
+<td>工程师</td>
+</tr>
+<tr>
+<td>李四</td>
+<td>30</td>
+<td>设计师</td>
+</tr>
+</tbody></table>
+<h3 id="9-2-表格对齐方式"><a href="#9-2-表格对齐方式" class="headerlink" title="9.2 表格对齐方式"></a>9.2 表格对齐方式</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown">| 左对齐 | 居中对齐 | 右对齐 |
+|:-------|:--------:|-------:|
+| 苹果   |   香蕉   |   橙子 |
+| 短文本 |  中等长度  | 很长的文本内容 |</code></pre></div>
+
+<p>HTML：  </p>
+<div class="code-wrapper"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;text-align:left&quot;</span>&gt;</span>左对齐<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;text-align:center&quot;</span>&gt;</span>居中对齐<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;text-align:right&quot;</span>&gt;</span>右对齐<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;text-align:left&quot;</span>&gt;</span>苹果<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;text-align:center&quot;</span>&gt;</span>香蕉<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;text-align:right&quot;</span>&gt;</span>橙子<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;text-align:left&quot;</span>&gt;</span>短文本<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;text-align:center&quot;</span>&gt;</span>中等长度<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;text-align:right&quot;</span>&gt;</span>很长的文本内容<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></code></pre></div>
+
+<p>渲染效果：</p>
+<table>
+<thead>
+<tr>
+<th align="left">左对齐</th>
+<th align="center">居中对齐</th>
+<th align="right">右对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">苹果</td>
+<td align="center">香蕉</td>
+<td align="right">橙子</td>
+</tr>
+<tr>
+<td align="left">短文本</td>
+<td align="center">中等长度</td>
+<td align="right">很长的文本内容</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="10-分隔线（Horizontal-Rules）"><a href="#10-分隔线（Horizontal-Rules）" class="headerlink" title="10. 分隔线（Horizontal Rules）"></a>10. 分隔线（Horizontal Rules）</h2><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown">---
+<span class="hljs-strong">***</span>
+<span class="hljs-strong">__<span class="hljs-emphasis">_</span></span></code></pre></div>
+<p>HTML：  </p>
+<div class="code-wrapper"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span></code></pre></div>
+
+<h2 id="渲染效果："><a href="#渲染效果：" class="headerlink" title="渲染效果：  "></a>渲染效果：  </h2><hr>
+<h2 id="11-转义字符（Escaping）"><a href="#11-转义字符（Escaping）" class="headerlink" title="11. 转义字符（Escaping）"></a>11. 转义字符（Escaping）</h2><div class="code-wrapper"><pre><code class="hljs markdown">\* 不是斜体 \*
+\# 不是标题 \#
+\<span class="hljs-code">` 不是代码 \`</span></code></pre></div>
+
+<p>渲染效果：  </p>
+<p>* 不是斜体 *<br># 不是标题 #<br>` 不是代码 `  </p>
+<h2 id="12-扩展语法（Footnotes-Definition-Lists）"><a href="#12-扩展语法（Footnotes-Definition-Lists）" class="headerlink" title="12. 扩展语法（Footnotes &amp; Definition Lists）"></a>12. 扩展语法（Footnotes &amp; Definition Lists）</h2><h3 id="12-1-脚注（Footnotes）"><a href="#12-1-脚注（Footnotes）" class="headerlink" title="12.1 脚注（Footnotes）"></a>12.1 脚注（Footnotes）</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown">这是有脚注的句子[^1]。
+
+[<span class="hljs-symbol">^1</span>]: <span class="hljs-link">这是脚注内容。</span></code></pre></div>
+<p>部分渲染器会在末尾生成脚注列表。</p>
+<p>渲染效果示例：（视渲染器而定）<br>这是有脚注的句子¹  </p>
+<ol>
+<li>这是脚注内容。</li>
+</ol>
+<h3 id="12-2-定义列表（Definition-Lists）"><a href="#12-2-定义列表（Definition-Lists）" class="headerlink" title="12.2 定义列表（Definition Lists）"></a>12.2 定义列表（Definition Lists）</h3><p>部分渲染器支持：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown">苹果
+:   一种常见水果
+
+香蕉
+:   黄色水果</code></pre></div>
+
+<dl><dt>渲染效果示例：（视渲染器而定）<br>苹果</dt><dd>一种常见水果  </dd></dl><dl><dt>香蕉</dt><dd>黄色水果</dd></dl><hr>
+<h2 id="13-内嵌-HTML"><a href="#13-内嵌-HTML" class="headerlink" title="13. 内嵌 HTML"></a>13. 内嵌 HTML</h2><p>可以直接插入原生 HTML：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown"><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;color:red;&quot;</span>&gt;</span></span>红色文字<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre></div>
+
+<p>大多数 Markdown 渲染器会原样输出。</p>
+<p>渲染效果：  </p>
+<div style="color:red;">红色文字</div>
+
+<hr>
+<h2 id="14-任务列表（Task-Lists）"><a href="#14-任务列表（Task-Lists）" class="headerlink" title="14. 任务列表（Task Lists）"></a>14. 任务列表（Task Lists）</h2><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown"><span class="hljs-bullet">-</span> [x] 已完成的任务
+<span class="hljs-bullet">-</span> [ ] 未完成的任务
+<span class="hljs-bullet">-</span> [x] 另一个已完成的任务
+<span class="hljs-bullet">  -</span> [ ] 子任务1
+<span class="hljs-bullet">  -</span> [x] 子任务2</code></pre></div>
+
+<p>HTML：  </p>
+<div class="code-wrapper"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">checked</span> <span class="hljs-attr">disabled</span>&gt;</span> 已完成的任务<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">disabled</span>&gt;</span> 未完成的任务<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">checked</span> <span class="hljs-attr">disabled</span>&gt;</span> 另一个已完成的任务
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">disabled</span>&gt;</span> 子任务1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">checked</span> <span class="hljs-attr">disabled</span>&gt;</span> 子任务2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre></div>
+
+<p>渲染效果：  </p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 已完成的任务</li>
+<li><input disabled="" type="checkbox"> 未完成的任务</li>
+<li><input checked="" disabled="" type="checkbox"> 另一个已完成的任务<ul>
+<li><input disabled="" type="checkbox"> 子任务1</li>
+<li><input checked="" disabled="" type="checkbox"> 子任务2</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="15-嵌套元素（Nested-Elements）"><a href="#15-嵌套元素（Nested-Elements）" class="headerlink" title="15. 嵌套元素（Nested Elements）"></a>15. 嵌套元素（Nested Elements）</h2><h3 id="15-1-嵌套列表"><a href="#15-1-嵌套列表" class="headerlink" title="15.1 嵌套列表"></a>15.1 嵌套列表</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown"><span class="hljs-bullet">1.</span> 第一项
+<span class="hljs-bullet">   -</span> 子项目 a
+<span class="hljs-bullet">   -</span> 子项目 b
+<span class="hljs-bullet">     1.</span> 嵌套编号 1
+<span class="hljs-bullet">     2.</span> 嵌套编号 2
+<span class="hljs-bullet">2.</span> 第二项
+   &gt; 在列表中嵌套引用
+   
+   <span class="hljs-code">```javascript</span>
+<span class="hljs-code">   // 在列表中嵌套代码块</span>
+<span class="hljs-code">   console.log(&quot;Hello World&quot;);</span></code></pre></div>
+<div class="code-wrapper"><pre><code class="hljs xml">
+HTML：  
+```html
+<span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>第一项
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>子项目 a<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>子项目 b
+        <span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>嵌套编号 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>嵌套编号 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>第二项
+    <span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span>&gt;</span>在列表中嵌套引用<span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;language-javascript&quot;</span>&gt;</span>// 在列表中嵌套代码块
+console.log(&quot;Hello World&quot;);<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span></code></pre></div>
+
+<p>渲染效果：  </p>
+<ol>
+<li><p>第一项</p>
+<ul>
+<li>子项目 a</li>
+<li>子项目 b<ol>
+<li>嵌套编号 1</li>
+<li>嵌套编号 2</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>第二项</p>
+<blockquote>
+<p>在列表中嵌套引用</p>
+</blockquote>
+<div class="code-wrapper"><pre><code class="hljs javascript"><span class="hljs-comment">// 在列表中嵌套代码块</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;Hello World&quot;</span>);</code></pre></div></li>
+</ol>
+<h3 id="15-2-嵌套引用"><a href="#15-2-嵌套引用" class="headerlink" title="15.2 嵌套引用"></a>15.2 嵌套引用</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown"><span class="hljs-quote">&gt; 这是一级引用</span>
+<span class="hljs-quote">&gt; </span>
+<span class="hljs-quote">&gt; &gt; 这是二级引用</span>
+<span class="hljs-quote">&gt; &gt; </span>
+<span class="hljs-quote">&gt; &gt; &gt; 这是三级引用</span>
+<span class="hljs-quote">&gt; </span>
+<span class="hljs-quote">&gt; 回到一级引用</span></code></pre></div>
+
+<p>HTML：  </p>
+<div class="code-wrapper"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>这是一级引用<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>这是二级引用<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>这是三级引用<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>回到一级引用<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span></code></pre></div>
+
+<p>渲染效果：  </p>
+<blockquote>
+<p>这是一级引用</p>
+<blockquote>
+<p>这是二级引用</p>
+<blockquote>
+<p>这是三级引用</p>
+</blockquote>
+</blockquote>
+<p>回到一级引用</p>
+</blockquote>
+<hr>
+<h2 id="16-表情符号（Emoji）"><a href="#16-表情符号（Emoji）" class="headerlink" title="16. 表情符号（Emoji）"></a>16. 表情符号（Emoji）</h2><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown">:smile: :heart: :thumbsup: :rocket: :fire: :100:
+:warning: :bulb: :tada: :sparkles: :crown: :star:
+
+GitHub 风格：
+:octocat: :shipit: :boom: :zap: :memo: :pencil2:</code></pre></div>
+
+<p>HTML：  </p>
+<div class="code-wrapper"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>😄 ❤️ 👍 🚀 🔥 💯<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>⚠️ 💡 🎉 ✨ 👑 ⭐<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>🐙 🚢 💥 ⚡ 📝 ✏️<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre></div>
+
+<p>渲染效果：<br>😄 ❤️ 👍 🚀 🔥 💯<br>⚠️ 💡 🎉 ✨ 👑 ⭐<br>🐙 🚢 💥 ⚡ 📝 ✏️</p>
+<hr>
+<h2 id="17-数学公式（Mathematical-Expressions）"><a href="#17-数学公式（Mathematical-Expressions）" class="headerlink" title="17. 数学公式（Mathematical Expressions）"></a>17. 数学公式（Mathematical Expressions）</h2><h3 id="17-1-行内公式"><a href="#17-1-行内公式" class="headerlink" title="17.1 行内公式"></a>17.1 行内公式</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown">这是行内公式：$E = mc^2$，爱因斯坦质能方程。</code></pre></div>
+
+<p>HTML：  </p>
+<div class="code-wrapper"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>这是行内公式：<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;math inline&quot;</span>&gt;</span>E = mc^2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>，爱因斯坦质能方程。<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre></div>
+
+<p>渲染效果：<br>这是行内公式：$E &#x3D; mc^2$，爱因斯坦质能方程。</p>
+<h3 id="17-2-块级公式"><a href="#17-2-块级公式" class="headerlink" title="17.2 块级公式"></a>17.2 块级公式</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown">$$
+\begin&#123;align&#125;
+\nabla \cdot \mathbf&#123;E&#125; &amp;= \frac&#123;\rho&#125;&#123;\epsilon<span class="hljs-emphasis">_0&#125; \\</span>
+<span class="hljs-emphasis">\nabla \cdot \mathbf&#123;B&#125; &amp;= 0 \\</span>
+<span class="hljs-emphasis">\nabla \times \mathbf&#123;E&#125; &amp;= -\frac&#123;\partial \mathbf&#123;B&#125;&#125;&#123;\partial t&#125; \\</span>
+<span class="hljs-emphasis">\nabla \times \mathbf&#123;B&#125; &amp;= \mu_</span>0 \mathbf&#123;J&#125; + \mu<span class="hljs-emphasis">_0 \epsilon_</span>0 \frac&#123;\partial \mathbf&#123;E&#125;&#125;&#123;\partial t&#125;
+\end&#123;align&#125;
+$$</code></pre></div>
+
+<p>HTML：  </p>
+<div class="code-wrapper"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;math display&quot;</span>&gt;</span>
+\begin&#123;align&#125;
+\nabla \cdot \mathbf&#123;E&#125; &amp;= \frac&#123;\rho&#125;&#123;\epsilon_0&#125; \\
+\nabla \cdot \mathbf&#123;B&#125; &amp;= 0 \\
+\nabla \times \mathbf&#123;E&#125; &amp;= -\frac&#123;\partial \mathbf&#123;B&#125;&#125;&#123;\partial t&#125; \\
+\nabla \times \mathbf&#123;B&#125; &amp;= \mu_0 \mathbf&#123;J&#125; + \mu_0 \epsilon_0 \frac&#123;\partial \mathbf&#123;E&#125;&#125;&#123;\partial t&#125;
+\end&#123;align&#125;
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
+
+<p>渲染效果：<br>$$<br>\begin{align}<br>\nabla \cdot \mathbf{E} &amp;&#x3D; \frac{\rho}{\epsilon_0} \<br>\nabla \cdot \mathbf{B} &amp;&#x3D; 0 \<br>\nabla \times \mathbf{E} &amp;&#x3D; -\frac{\partial \mathbf{B}}{\partial t} \<br>\nabla \times \mathbf{B} &amp;&#x3D; \mu_0 \mathbf{J} + \mu_0 \epsilon_0 \frac{\partial \mathbf{E}}{\partial t}<br>\end{align}<br>$$</p>
+<hr>
+<h2 id="18-流程图（Flowcharts）"><a href="#18-流程图（Flowcharts）" class="headerlink" title="18. 流程图（Flowcharts）"></a>18. 流程图（Flowcharts）</h2><h3 id="18-1-Mermaid-流程图"><a href="#18-1-Mermaid-流程图" class="headerlink" title="18.1 Mermaid 流程图"></a>18.1 Mermaid 流程图</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown"><span class="hljs-code">```mermaid</span>
+<span class="hljs-code">flowchart TD</span>
+<span class="hljs-code">    A[开始] --&gt; B&#123;是否满足条件?&#125;</span>
+<span class="hljs-code">    B --&gt;|是| C[执行操作]</span>
+<span class="hljs-code">    B --&gt;|否| D[跳过操作]</span>
+<span class="hljs-code">    C --&gt; E[结束]</span>
+<span class="hljs-code">    D --&gt; E</span>
+<span class="hljs-code">```</span></code></pre></div>
+
+<p>HTML：  </p>
+<div class="code-wrapper"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mermaid&quot;</span>&gt;</span>
+flowchart TD
+    A[开始] --&gt; B&#123;是否满足条件?&#125;
+    B --&gt;|是| C[执行操作]
+    B --&gt;|否| D[跳过操作]
+    C --&gt; E[结束]
+    D --&gt; E
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
+
+<p>渲染效果：  </p>
+<pre><code class=" mermaid">flowchart TD
+    A[开始] --&gt; B&#123;是否满足条件?&#125;
+    B --&gt;|是| C[执行操作]
+    B --&gt;|否| D[跳过操作]
+    C --&gt; E[结束]
+    D --&gt; E</code></pre>
+
+<h3 id="18-2-序列图"><a href="#18-2-序列图" class="headerlink" title="18.2 序列图"></a>18.2 序列图</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown"><span class="hljs-code">```mermaid</span>
+<span class="hljs-code">sequenceDiagram</span>
+<span class="hljs-code">    participant A as 用户</span>
+<span class="hljs-code">    participant B as 服务器</span>
+<span class="hljs-code">    participant C as 数据库</span>
+<span class="hljs-code">    </span>
+<span class="hljs-code">    A-&gt;&gt;B: 发送请求</span>
+<span class="hljs-code">    B-&gt;&gt;C: 查询数据</span>
+<span class="hljs-code">    C--&gt;&gt;B: 返回结果</span>
+<span class="hljs-code">    B--&gt;&gt;A: 响应用户</span>
+<span class="hljs-code">```</span></code></pre></div>
+
+<p>HTML：  </p>
+<div class="code-wrapper"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mermaid&quot;</span>&gt;</span>
+sequenceDiagram
+    participant A as 用户
+    participant B as 服务器
+    participant C as 数据库
+    
+    A-&gt;&gt;B: 发送请求
+    B-&gt;&gt;C: 查询数据
+    C--&gt;&gt;B: 返回结果
+    B--&gt;&gt;A: 响应用户
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
+
+<p>渲染效果：  </p>
+<pre><code class=" mermaid">sequenceDiagram
+    participant A as 用户
+    participant B as 服务器
+    participant C as 数据库
+    
+    A-&gt;&gt;B: 发送请求
+    B-&gt;&gt;C: 查询数据
+    C--&gt;&gt;B: 返回结果
+    B--&gt;&gt;A: 响应用户</code></pre>
+
+<hr>
+<h2 id="19-高级表格（Advanced-Tables）"><a href="#19-高级表格（Advanced-Tables）" class="headerlink" title="19. 高级表格（Advanced Tables）"></a>19. 高级表格（Advanced Tables）</h2><h3 id="19-1-表格中的格式化"><a href="#19-1-表格中的格式化" class="headerlink" title="19.1 表格中的格式化"></a>19.1 表格中的格式化</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown">| 功能 | 语法 | 示例 |
+|------|------|------|
+| <span class="hljs-strong">**粗体**</span> | <span class="hljs-code">`**text**`</span> | <span class="hljs-strong">**重要内容**</span> |
+| <span class="hljs-emphasis">*斜体*</span> | <span class="hljs-code">`*text*`</span> | <span class="hljs-emphasis">*强调文字*</span> |
+| <span class="hljs-code">`代码`</span> | <span class="hljs-code">`` `</span>code<span class="hljs-code">` `</span><span class="hljs-code">` | `</span>console.log()` |
+| [<span class="hljs-string">链接</span>](<span class="hljs-link">https://example.com</span>) | <span class="hljs-code">`[text](url)`</span> | [<span class="hljs-string">访问网站</span>](<span class="hljs-link">https://example.com</span>) |
+| 换行<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></span>文本 | <span class="hljs-code">`text&lt;br&gt;text`</span> | 第一行<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></span>第二行 |</code></pre></div>
+
+<p>HTML：  </p>
+<div class="code-wrapper"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>功能<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>语法<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>示例<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>粗体<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>**text**<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>重要内容<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>斜体<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>*text*<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>强调文字<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>代码<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>`code`<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>console.log()<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://example.com&quot;</span>&gt;</span>链接<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>[text](url)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://example.com&quot;</span>&gt;</span>访问网站<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>换行<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>文本<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>text<span class="hljs-symbol">&amp;lt;</span>br<span class="hljs-symbol">&amp;gt;</span>text<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>第一行<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>第二行<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></code></pre></div>
+
+<p>渲染效果：  </p>
+<table>
+<thead>
+<tr>
+<th>功能</th>
+<th>语法</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>粗体</strong></td>
+<td><code>**text**</code></td>
+<td><strong>重要内容</strong></td>
+</tr>
+<tr>
+<td><em>斜体</em></td>
+<td><code>*text*</code></td>
+<td><em>强调文字</em></td>
+</tr>
+<tr>
+<td><code>代码</code></td>
+<td><code>`code`</code></td>
+<td><code>console.log()</code></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://example.com/">链接</a></td>
+<td><code>[text](url)</code></td>
+<td><a target="_blank" rel="noopener" href="https://example.com/">访问网站</a></td>
+</tr>
+<tr>
+<td>换行<br>文本</td>
+<td><code>text&lt;br&gt;text</code></td>
+<td>第一行<br>第二行</td>
+</tr>
+</tbody></table>
+<h3 id="19-2-复杂表格结构"><a href="#19-2-复杂表格结构" class="headerlink" title="19.2 复杂表格结构"></a>19.2 复杂表格结构</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown">| 编程语言 | 类型 | 难度 | 应用领域 | 推荐指数 |
+|:---------|:----:|:----:|:--------:|:--------:|
+| Python | 解释型 | ⭐⭐ | 数据科学、AI | ⭐⭐⭐⭐⭐ |
+| JavaScript | 解释型 | ⭐⭐⭐ | Web开发 | ⭐⭐⭐⭐⭐ |
+| Java | 编译型 | ⭐⭐⭐⭐ | 企业应用 | ⭐⭐⭐⭐ |
+| C++ | 编译型 | ⭐⭐⭐⭐⭐ | 系统编程 | ⭐⭐⭐ |
+| Go | 编译型 | ⭐⭐⭐ | 服务器开发 | ⭐⭐⭐⭐ |</code></pre></div>
+
+<p>渲染效果：  </p>
+<table>
+<thead>
+<tr>
+<th align="left">编程语言</th>
+<th align="center">类型</th>
+<th align="center">难度</th>
+<th align="center">应用领域</th>
+<th align="center">推荐指数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Python</td>
+<td align="center">解释型</td>
+<td align="center">⭐⭐</td>
+<td align="center">数据科学、AI</td>
+<td align="center">⭐⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td align="left">JavaScript</td>
+<td align="center">解释型</td>
+<td align="center">⭐⭐⭐</td>
+<td align="center">Web开发</td>
+<td align="center">⭐⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td align="left">Java</td>
+<td align="center">编译型</td>
+<td align="center">⭐⭐⭐⭐</td>
+<td align="center">企业应用</td>
+<td align="center">⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td align="left">C++</td>
+<td align="center">编译型</td>
+<td align="center">⭐⭐⭐⭐⭐</td>
+<td align="center">系统编程</td>
+<td align="center">⭐⭐⭐</td>
+</tr>
+<tr>
+<td align="left">Go</td>
+<td align="center">编译型</td>
+<td align="center">⭐⭐⭐</td>
+<td align="center">服务器开发</td>
+<td align="center">⭐⭐⭐⭐</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="20-高级代码块（Advanced-Code-Blocks）"><a href="#20-高级代码块（Advanced-Code-Blocks）" class="headerlink" title="20. 高级代码块（Advanced Code Blocks）"></a>20. 高级代码块（Advanced Code Blocks）</h2><h3 id="20-1-代码块高亮和行号"><a href="#20-1-代码块高亮和行号" class="headerlink" title="20.1 代码块高亮和行号"></a>20.1 代码块高亮和行号</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown"><span class="hljs-code">```python &#123;.line-numbers&#125;</span>
+<span class="hljs-code">def fibonacci(n):</span>
+<span class="hljs-code">    &quot;&quot;&quot;计算斐波那契数列&quot;&quot;&quot;</span>
+<span class="hljs-code">    if n &lt;= 1:</span>
+<span class="hljs-code">        return n</span>
+<span class="hljs-code">    return fibonacci(n-1) + fibonacci(n-2)</span>
+<span class="hljs-code"></span>
+<span class="hljs-code"># 测试函数</span>
+<span class="hljs-code">for i in range(10):</span>
+<span class="hljs-code">    print(f&quot;fibonacci(&#123;i&#125;) = &#123;fibonacci(i)&#125;&quot;)</span>
+<span class="hljs-code">```</span></code></pre></div>
+
+<p>HTML：  </p>
+<div class="code-wrapper"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;language-python line-numbers&quot;</span>&gt;</span>def fibonacci(n):
+    &quot;&quot;&quot;计算斐波那契数列&quot;&quot;&quot;
+    if n &lt;= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+
+# 测试函数
+for i in range(10):
+    print(f&quot;fibonacci(&#123;i&#125;) = &#123;fibonacci(i)&#125;&quot;)
+<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span></code></pre></div>
+
+<h3 id="20-2-代码块标题和说明"><a href="#20-2-代码块标题和说明" class="headerlink" title="20.2 代码块标题和说明"></a>20.2 代码块标题和说明</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown"><span class="hljs-code">```javascript title=&quot;app.js&quot; &#123;2,5-7&#125;</span>
+<span class="hljs-code">const express = require(&#x27;express&#x27;);</span>
+<span class="hljs-code">const app = express(); // 创建应用实例</span>
+<span class="hljs-code"></span>
+<span class="hljs-code">app.get(&#x27;/&#x27;, (req, res) =&gt; &#123;</span>
+<span class="hljs-code">    res.json(&#123;</span>
+<span class="hljs-code">        message: &#x27;Hello World!&#x27;,</span>
+<span class="hljs-code">        status: &#x27;success&#x27;</span>
+<span class="hljs-code">    &#125;);</span>
+<span class="hljs-code">&#125;);</span>
+<span class="hljs-code"></span>
+<span class="hljs-code">app.listen(3000, () =&gt; &#123;</span>
+<span class="hljs-code">    console.log(&#x27;Server running on port 3000&#x27;);</span>
+<span class="hljs-code">&#125;);</span>
+<span class="hljs-code">```</span></code></pre></div>
+
+<h3 id="20-3-差异对比代码"><a href="#20-3-差异对比代码" class="headerlink" title="20.3 差异对比代码"></a>20.3 差异对比代码</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown"><span class="hljs-code">```diff</span>
+<span class="hljs-code">- const oldFunction = () =&gt; &#123;</span>
+<span class="hljs-code">-     console.log(&#x27;旧版本代码&#x27;);</span>
+<span class="hljs-code">- &#125;</span>
+<span class="hljs-code"></span>
+<span class="hljs-code">+ const newFunction = () =&gt; &#123;</span>
+<span class="hljs-code">+     console.log(&#x27;新版本代码&#x27;);</span>
+<span class="hljs-code">+     return &#x27;improved&#x27;;</span>
+<span class="hljs-code">+ &#125;</span>
+<span class="hljs-code">```</span></code></pre></div>
+
+<p>渲染效果：  </p>
+<div class="code-wrapper"><pre><code class="hljs diff"><span class="hljs-deletion">- const oldFunction = () =&gt; &#123;</span>
+<span class="hljs-deletion">-     console.log(&#x27;旧版本代码&#x27;);</span>
+<span class="hljs-deletion">- &#125;</span>
+
+<span class="hljs-addition">+ const newFunction = () =&gt; &#123;</span>
+<span class="hljs-addition">+     console.log(&#x27;新版本代码&#x27;);</span>
+<span class="hljs-addition">+     return &#x27;improved&#x27;;</span>
+<span class="hljs-addition">+ &#125;</span></code></pre></div>
+
+<hr>
+<h2 id="21-高级引用（Advanced-Blockquotes）"><a href="#21-高级引用（Advanced-Blockquotes）" class="headerlink" title="21. 高级引用（Advanced Blockquotes）"></a>21. 高级引用（Advanced Blockquotes）</h2><h3 id="21-1-带作者的引用"><a href="#21-1-带作者的引用" class="headerlink" title="21.1 带作者的引用"></a>21.1 带作者的引用</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown"><span class="hljs-quote">&gt; &quot;生活就像骑自行车，想保持平衡就得往前走。&quot;</span>
+<span class="hljs-quote">&gt; </span>
+<span class="hljs-quote">&gt; —— 阿尔伯特·爱因斯坦</span></code></pre></div>
+
+<p>HTML：  </p>
+<div class="code-wrapper"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&quot;生活就像骑自行车，想保持平衡就得往前走。&quot;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>—— 阿尔伯特·爱因斯坦<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span></code></pre></div>
+
+<p>渲染效果：  </p>
+<blockquote>
+<p>“生活就像骑自行车，想保持平衡就得往前走。”</p>
+<p>—— 阿尔伯特·爱因斯坦</p>
+</blockquote>
+<h3 id="21-2-彩色引用框"><a href="#21-2-彩色引用框" class="headerlink" title="21.2 彩色引用框"></a>21.2 彩色引用框</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown"><span class="hljs-quote">&gt; [!NOTE]</span>
+<span class="hljs-quote">&gt; 这是一个信息提示框，用于显示重要信息。</span>
+
+<span class="hljs-quote">&gt; [!WARNING]</span>
+<span class="hljs-quote">&gt; 这是一个警告框，用于显示需要注意的内容。</span>
+
+<span class="hljs-quote">&gt; [!IMPORTANT]</span>
+<span class="hljs-quote">&gt; 这是一个重要提示框，用于显示关键信息。</span>
+
+<span class="hljs-quote">&gt; [!TIP]</span>
+<span class="hljs-quote">&gt; 这是一个技巧提示框，用于分享有用的建议。</span></code></pre></div>
+
+<p>HTML：  </p>
+<div class="code-wrapper"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;callout callout-note&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>这是一个信息提示框，用于显示重要信息。<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;callout callout-warning&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>这是一个警告框，用于显示需要注意的内容。<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;callout callout-important&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>这是一个重要提示框，用于显示关键信息。<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;callout callout-tip&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>这是一个技巧提示框，用于分享有用的建议。<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
+
+<p>渲染效果：  </p>
+<blockquote>
+<p>[!NOTE]<br>这是一个信息提示框，用于显示重要信息。</p>
+</blockquote>
+<blockquote>
+<p>[!WARNING]<br>这是一个警告框，用于显示需要注意的内容。</p>
+</blockquote>
+<blockquote>
+<p>[!IMPORTANT]<br>这是一个重要提示框，用于显示关键信息。</p>
+</blockquote>
+<blockquote>
+<p>[!TIP]<br>这是一个技巧提示框，用于分享有用的建议。</p>
+</blockquote>
+<hr>
+<h2 id="22-键盘快捷键"><a href="#22-键盘快捷键" class="headerlink" title="22. 键盘快捷键"></a>22. 键盘快捷键</h2><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown">使用 <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span></span>Ctrl<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span></span> + <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span></span>C<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span></span> 复制文本
+使用 <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span></span>Ctrl<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span></span> + <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span></span>V<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span></span> 粘贴文本
+使用 <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span></span>Ctrl<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span></span> + <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span></span>Z<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span></span> 撤销操作
+使用 <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span></span>Ctrl<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span></span> + <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span></span>Shift<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span></span> + <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span></span>Z<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span></span> 重做操作</code></pre></div>
+
+<p>HTML：  </p>
+<div class="code-wrapper"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>使用 <span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span>Ctrl<span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span> + <span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span>C<span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span> 复制文本<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>使用 <span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span>Ctrl<span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span> + <span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span>V<span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span> 粘贴文本<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>使用 <span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span>Ctrl<span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span> + <span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span>Z<span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span> 撤销操作<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>使用 <span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span>Ctrl<span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span> + <span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span>Shift<span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span> + <span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span>Z<span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span> 重做操作<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre></div>
+
+<p>渲染效果：<br>使用 <kbd>Ctrl</kbd> + <kbd>C</kbd> 复制文本<br>使用 <kbd>Ctrl</kbd> + <kbd>V</kbd> 粘贴文本<br>使用 <kbd>Ctrl</kbd> + <kbd>Z</kbd> 撤销操作<br>使用 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd> 重做操作</p>
+<hr>
+<h2 id="23-高级HTML嵌入"><a href="#23-高级HTML嵌入" class="headerlink" title="23. 高级HTML嵌入"></a>23. 高级HTML嵌入</h2><h3 id="23-1-响应式图片"><a href="#23-1-响应式图片" class="headerlink" title="23.1 响应式图片"></a>23.1 响应式图片</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown"><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">picture</span>&gt;</span></span>
+  <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">media</span>=<span class="hljs-string">&quot;(max-width: 600px)&quot;</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">&quot;https://placehold.co/400x300&quot;</span>&gt;</span></span>
+  <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">media</span>=<span class="hljs-string">&quot;(max-width: 1200px)&quot;</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">&quot;https://placehold.co/800x600&quot;</span>&gt;</span></span>
+  <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://placehold.co/1200x800&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;响应式图片示例&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;width:100%;height:auto;&quot;</span>&gt;</span></span>
+<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">picture</span>&gt;</span></span></code></pre></div>
+
+<h3 id="23-2-视频嵌入"><a href="#23-2-视频嵌入" class="headerlink" title="23.2 视频嵌入"></a>23.2 视频嵌入</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown"><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;100%&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;auto&quot;</span> <span class="hljs-attr">controls</span>&gt;</span></span>
+  <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;video.mp4&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;video/mp4&quot;</span>&gt;</span></span>
+  <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;video.webm&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;video/webm&quot;</span>&gt;</span></span>
+  您的浏览器不支持视频标签。
+<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span></span></code></pre></div>
+
+<h3 id="23-3-音频嵌入"><a href="#23-3-音频嵌入" class="headerlink" title="23.3 音频嵌入"></a>23.3 音频嵌入</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown"><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">audio</span> <span class="hljs-attr">controls</span>&gt;</span></span>
+  <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;audio.mp3&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;audio/mpeg&quot;</span>&gt;</span></span>
+  <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;audio.ogg&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;audio/ogg&quot;</span>&gt;</span></span>
+  您的浏览器不支持音频标签。
+<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">audio</span>&gt;</span></span></code></pre></div>
+
+<h3 id="23-4-交互式元素"><a href="#23-4-交互式元素" class="headerlink" title="23.4 交互式元素"></a>23.4 交互式元素</h3><p>Markdown：  </p>
+<div class="code-wrapper"><pre><code class="hljs markdown"><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span></span>
+  <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span></span>点击展开更多信息<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span></span>
+  
+  这里是隐藏的内容，只有点击上面的标题才会展开显示。
+  
+<span class="hljs-bullet">  -</span> 可以包含列表
+<span class="hljs-bullet">  -</span> 可以包含<span class="hljs-strong">**格式化文本**</span>
+<span class="hljs-bullet">  -</span> 可以包含<span class="hljs-code">`代码`</span>
+  
+  <span class="hljs-code">```javascript</span>
+<span class="hljs-code">  console.log(&quot;甚至可以包含代码块！&quot;);</span></code></pre></div>
+</details>
+<div class="code-wrapper"><pre><code class="hljs xml">
+HTML：  
+```html
+<span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>点击展开更多信息<span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>这里是隐藏的内容，只有点击上面的标题才会展开显示。<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>可以包含列表<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>可以包含<span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>格式化文本<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>可以包含<span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>代码<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;language-javascript&quot;</span>&gt;</span>console.log(&quot;甚至可以包含代码块！&quot;);<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span></code></pre></div>
+
+<p>渲染效果：  </p>
+<details>
+  <summary>点击展开更多信息</summary>
+  
+<p>  这里是隐藏的内容，只有点击上面的标题才会展开显示。</p>
+<ul>
+<li>可以包含列表</li>
+<li>可以包含<strong>格式化文本</strong></li>
+<li>可以包含<code>代码</code></li>
+</ul>
+  <div class="code-wrapper"><pre><code class="hljs javascript"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;甚至可以包含代码块！&quot;</span>);</code></pre></div>
+</details>
+
+<hr>
+<h2 id="24-Markdown最佳实践"><a href="#24-Markdown最佳实践" class="headerlink" title="24. Markdown最佳实践"></a>24. Markdown最佳实践</h2><h3 id="24-1-文档结构建议"><a href="#24-1-文档结构建议" class="headerlink" title="24.1 文档结构建议"></a>24.1 文档结构建议</h3><ol>
+<li><p><strong>使用有层次的标题</strong></p>
+<ul>
+<li>一个文档只使用一个 <code>#</code> 标题</li>
+<li>标题层级不要跳跃（不要从 <code>#</code> 直接跳到 <code>###</code>）</li>
+<li>每个标题前后都要有空行</li>
+</ul>
+</li>
+<li><p><strong>合理使用空行</strong></p>
+<ul>
+<li>段落之间用空行分隔</li>
+<li>列表前后要有空行</li>
+<li>代码块前后要有空行</li>
+</ul>
+</li>
+<li><p><strong>链接处理</strong></p>
+<ul>
+<li>对于重复使用的链接，使用引用式链接</li>
+<li>外部链接考虑添加 <code>target=&quot;_blank&quot;</code></li>
+</ul>
+</li>
+</ol>
+<h3 id="24-2-编写技巧"><a href="#24-2-编写技巧" class="headerlink" title="24.2 编写技巧"></a>24.2 编写技巧</h3><ol>
+<li><p><strong>表格设计</strong></p>
+<ul>
+<li>保持表格简洁，避免过多列</li>
+<li>使用对齐方式提高可读性</li>
+<li>复杂数据考虑分割成多个表格</li>
+</ul>
+</li>
+<li><p><strong>代码块优化</strong></p>
+<ul>
+<li>总是指定编程语言</li>
+<li>添加注释说明关键代码</li>
+<li>保持代码的可读性和简洁性</li>
+</ul>
+</li>
+<li><p><strong>图片处理</strong></p>
+<ul>
+<li>使用有意义的 alt 文本</li>
+<li>控制图片大小和格式</li>
+<li>考虑使用图片说明文字</li>
+</ul>
+</li>
+</ol>
+<h3 id="24-3-兼容性考虑"><a href="#24-3-兼容性考虑" class="headerlink" title="24.3 兼容性考虑"></a>24.3 兼容性考虑</h3><p>不同的 Markdown 解析器支持的语法可能有差异：</p>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>CommonMark</th>
+<th>GitHub</th>
+<th>GitLab</th>
+<th>Typora</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基础语法</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>表格</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>任务列表</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>数学公式</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>流程图</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>脚注</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>高亮</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+<hr>
+<p><em>教程完</em><br><em>Markdown 语法全面掌握，让你的文档更加专业美观！</em></p>
+<hr>
+<h2 id="附录：常用-Markdown-编辑器推荐"><a href="#附录：常用-Markdown-编辑器推荐" class="headerlink" title="附录：常用 Markdown 编辑器推荐"></a>附录：常用 Markdown 编辑器推荐</h2><h3 id="在线编辑器"><a href="#在线编辑器" class="headerlink" title="在线编辑器"></a>在线编辑器</h3><ul>
+<li><strong>Typora</strong> - 所见即所得的桌面编辑器</li>
+<li><strong>Mark Text</strong> - 开源的实时预览编辑器  </li>
+<li><strong>Obsidian</strong> - 功能强大的知识管理工具</li>
+<li><strong>Notion</strong> - 集成化的笔记和文档平台</li>
+</ul>
+<h3 id="VS-Code-插件"><a href="#VS-Code-插件" class="headerlink" title="VS Code 插件"></a>VS Code 插件</h3><ul>
+<li><strong>Markdown All in One</strong> - 全功能 Markdown 支持</li>
+<li><strong>Markdown Preview Enhanced</strong> - 增强的预览功能</li>
+<li><strong>Paste Image</strong> - 快速插入图片</li>
+<li><strong>Markdown Lint</strong> - 语法检查和格式化</li>
+</ul>
+<h3 id="其他工具"><a href="#其他工具" class="headerlink" title="其他工具"></a>其他工具</h3><ul>
+<li><strong>Pandoc</strong> - 强大的文档转换工具</li>
+<li><strong>GitBook</strong> - 在线文档发布平台</li>
+<li><strong>Docsify</strong> - 简单的文档网站生成器</li>
+<li><strong>VuePress</strong> - Vue 驱动的静态网站生成器</li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%AF%AD%E6%B3%95%E6%95%99%E7%A8%8B/" class="category-chain-item">语法教程</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Markdown/" class="print-no-link">#Markdown</a>
+      
+    </div>
+  
+</div>
+
+
+              
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/06/07/HTML%E8%AF%AD%E6%B3%95%E6%95%99%E7%A8%8B/" title="HTML语法详细教程">
+                        <span class="hidden-mobile">HTML语法详细教程</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#comments', function() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'TsukishiroTsuikumo/tsukishirotsuikumo.github.io');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
+    })
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+      <div class="col-lg-7 mx-auto nopadding-x-md">
+        <div class="container custom mx-auto">
+          <!--音乐-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script>
+
+        </div>
+      </div>
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
+<div= "pjax-container"> <div=  id="player" class="aplayer aplayer-withlist aplayer-fixed" data-id="13706919703" data-server="netease" data-type="playlist" data-order="random" data-fixed="false" data-listfolded="true" data-theme="#2D8CF0" ></div> </div>
+
+
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        Views: 
+        <span id="busuanzi_value_site_pv"></span>
+        
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        Visitors: 
+        <span id="busuanzi_value_site_uv"></span>
+        
+      </span>
+    
+    
+
+  
+
+</div>
+
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  var relativeDate = function() {
+    var updatedTime = document.getElementById('updated-time');
+    if (updatedTime) {
+      var text = updatedTime.textContent;
+      var reg = /\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:Z|[+-]\d{2}:\d{2})/;
+      var matchs = text.match(reg);
+      if (matchs) {
+        var relativeTime = moment(matchs[0]).fromNow();
+        updatedTime.textContent = text.replace(reg, relativeTime);
+      }
+      updatedTime.style.display = '';
+    }
+  };
+  Fluid.utils.createScript('https://lib.baomitu.com/moment.js/2.29.4/moment.min.js', function() {
+    if (!'en'.startsWith('en')) {
+      Fluid.utils.createScript('https://lib.baomitu.com/moment.js/2.29.4/locale/en.min.js', function() {
+        relativeDate();
+      });
+    } else {
+      relativeDate();
+    }
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@latest/dist/Meting.min.js"></script>
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>
