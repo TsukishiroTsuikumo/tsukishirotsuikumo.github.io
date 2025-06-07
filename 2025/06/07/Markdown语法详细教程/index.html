@@ -21,24 +21,27 @@
   <meta name="author" content="月白追云">
   <meta name="keywords" content="">
   
-    <meta name="description" content=".markdown-body {     font-family: system-ui;     font-size: 16px;     line-height: 1.6;   }      .demo-box {     border: 2px solid #e1e4e8;     border-radius: 8px;     margin: 20px 0;     overflow:">
+    <meta name="description" content=".markdown-body {     font-family: system-ui;     font-size: 16px;     line-height: 1.6;   }    .demo-box {     border: 2px solid #e1e4e8;     border-radius: 8px;     margin: 32px 0;     overflow: h">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Markdown语法详细教程">
 <meta property="og:url" content="https://tsukishirotsuikumo.github.io/2025/06/07/Markdown%E8%AF%AD%E6%B3%95%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/index.html">
 <meta property="og:site_name" content="月白のBlog">
-<meta property="og:description" content=".markdown-body {     font-family: system-ui;     font-size: 16px;     line-height: 1.6;   }      .demo-box {     border: 2px solid #e1e4e8;     border-radius: 8px;     margin: 20px 0;     overflow:">
+<meta property="og:description" content=".markdown-body {     font-family: system-ui;     font-size: 16px;     line-height: 1.6;   }    .demo-box {     border: 2px solid #e1e4e8;     border-radius: 8px;     margin: 32px 0;     overflow: h">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://tsukishirotsuikumo.github.io/image.jpg">
-<meta property="og:image" content="https://tsukishirotsuikumo.github.io/image.jpg">
-<meta property="og:image" content="https://tsukishirotsuikumo.github.io/photo.jpg%3C/code%3E%3C/pre%3E">
+<meta property="og:image" content="https://placehold.co/200x150?text=%E5%B8%A6%E6%A0%87%E9%A2%98%E5%9B%BE%E7%89%87">
+<meta property="og:image" content="https://placehold.co/100x100?text=%E5%8F%AF%E7%82%B9%E5%87%BB">
+<meta property="og:image" content="https://placehold.co/150x100?text=%E7%A4%BA%E4%BE%8B%E5%9B%BE%E7%89%87">
+<meta property="og:image" content="https://placehold.co/200x150?text=%E5%B8%A6%E6%A0%87%E9%A2%98%E5%9B%BE%E7%89%87">
+<meta property="og:image" content="https://placehold.co/100x100?text=%E5%8F%AF%E7%82%B9%E5%87%BB">
+<meta property="og:image" content="https://placehold.co/180x120?text=%E7%85%A7%E7%89%87%3C/code%3E%3C/pre%3E">
+<meta property="og:image" content="https://placehold.co/120x80?text=Logo">
+<meta property="og:image" content="https://placehold.co/180x120?text=%E7%85%A7%E7%89%87">
 <meta property="article:published_time" content="2025-06-07T06:00:00.000Z">
-<meta property="article:modified_time" content="2025-06-07T04:16:37.001Z">
+<meta property="article:modified_time" content="2025-06-07T08:55:53.141Z">
 <meta property="article:author" content="月白追云">
 <meta property="article:tag" content="语法教程">
-<meta property="article:tag" content="Markdown">
-<meta property="article:tag" content="文档编写">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://tsukishirotsuikumo.github.io/image.jpg">
+<meta name="twitter:image" content="https://placehold.co/200x150?text=%E5%B8%A6%E6%A0%87%E9%A2%98%E5%9B%BE%E7%89%87">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -281,7 +284,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2k words
+          2.2k words
         
       </span>
     
@@ -292,7 +295,7 @@
         
         
         
-          17 mins
+          19 mins
         
       </span>
     
@@ -356,7 +359,7 @@
               <p id="updated-time" class="note note-info" style="display: none">
                 
                   
-                    Last updated on 2025-06-07T12:16:37+08:00
+                    Last updated on 2025-06-07T16:55:53+08:00
                   
                   
 
@@ -372,14 +375,14 @@
     font-size: 16px;
     line-height: 1.6;
   }
-  
+
   .demo-box {
     border: 2px solid #e1e4e8;
     border-radius: 8px;
-    margin: 20px 0;
+    margin: 32px 0;
     overflow: hidden;
   }
-  
+
   .demo-title {
     background: #f6f8fa;
     padding: 12px 16px;
@@ -388,17 +391,30 @@
     color: #586069;
     margin: 0;
   }
-  
+
   .demo-content {
     padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
-  
+
+  h2 {
+    margin-top: 48px;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 8px;
+  }
+
+  h3 {
+    margin-top: 32px;
+  }
+
   .demo-result {
     background: #f8f9fa;
     border-top: 1px solid #e1e4e8;
     padding: 16px;
   }
-  
+
   .code-comparison {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -635,6 +651,19 @@ function greet(name) &#123;
   </div>
 </div>
 
+<h3 id="4-3-高亮、上标和下标"><a href="#4-3-高亮、上标和下标" class="headerlink" title="4.3 高亮、上标和下标"></a>4.3 高亮、上标和下标</h3><div class="demo-box">
+  <div class="demo-title">高亮、上标和下标演示</div>
+  <div class="code-comparison">
+    <div class="code-markdown">
+      <h4>Markdown语法 (扩展/HTML)</h4>
+      <div class="code-wrapper"><pre><code class="hljs">==高亮文本== (部分Markdown处理器支持)
+或者使用HTML: &lt;mark&gt;高亮文本&lt;/mark&gt;
+
+<p>H&lt;sub&gt;2&lt;&#x2F;sub&gt;O (水)<br>E &#x3D; mc&lt;sup&gt;2&lt;&#x2F;sup&gt; (爱因斯坦质能方程)</p>
+<p>Markdown扩展语法 (示例):<br>X^2^ (上标)<br>H<del>2</del>O (下标)<br></code></pre></div><br>    </div><br>    <div class="code-html"><br>      <h4>对应HTML</h4><br>      <div class="code-wrapper"><pre><code class="hljs">&lt;mark&gt;高亮文本&lt;/mark&gt;</p>
+<p>H&lt;sub&gt;2&lt;/sub&gt;O<br>E = mc&lt;sup&gt;2&lt;/sup&gt;<br></code></pre></div><br>    </div><br>  </div><br>  <div class="demo-result"><br>    <h4>渲染效果</h4><br>    <p><mark>高亮文本</mark></p><br>    <p>H<sub>2</sub>O</p><br>    <p>E &#x3D; mc<sup>2</sup></p><br>    <p>X<sup>2</sup> (上标渲染示例)</p><br>    <p>H<sub>2</sub>O (下标渲染示例)</p><br>  </div></p>
+</div>
+
 <h2 id="5-列表"><a href="#5-列表" class="headerlink" title="5. 列表"></a>5. 列表</h2><h3 id="5-1-无序列表"><a href="#5-1-无序列表" class="headerlink" title="5.1 无序列表"></a>5.1 无序列表</h3><div class="demo-box">
   <div class="demo-title">无序列表演示</div>
   <div class="code-comparison">
@@ -769,10 +798,10 @@ function greet(name) &#123;
 
 <p><a target="_blank" rel="noopener" href="https://github.com/" title="世界最大的代码托管平台">GitHub</a></p>
 <p>&lt;<a target="_blank" rel="noopener" href="https://www.example.com/">https://www.example.com</a>&gt;</p>
-<p>&lt;<a href="mailto:&#101;&#120;&#97;&#x6d;&#112;&#x6c;&#x65;&#x40;&#x65;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#111;&#109;">example@email.com</a>&gt;</code></pre></div><br>    </div><br>    <div class="code-html"><br>      <h4>对应HTML</h4><br>      <div class="code-wrapper"><pre><code class="hljs">&lt;a href=&quot;<a target="_blank" rel="noopener" href="https://github.com"&gt;github&lt;/a">https://github.com&quot;&gt;GitHub&lt;/a</a>&gt;</p>
+<p>&lt;<a href="mailto:&#x65;&#120;&#x61;&#109;&#x70;&#x6c;&#x65;&#64;&#101;&#109;&#97;&#x69;&#x6c;&#x2e;&#x63;&#111;&#109;">example@email.com</a>&gt;</code></pre></div><br>    </div><br>    <div class="code-html"><br>      <h4>对应HTML</h4><br>      <div class="code-wrapper"><pre><code class="hljs">&lt;a href=&quot;<a target="_blank" rel="noopener" href="https://github.com"&gt;github&lt;/a">https://github.com&quot;&gt;GitHub&lt;/a</a>&gt;</p>
 <p>&lt;a href=&quot;<a target="_blank" rel="noopener" href="https://github.com/">https://github.com</a>&quot; title=&quot;世界最大的代码托管平台&quot;&gt;GitHub&lt;/a&gt;</p>
 <p>&lt;a href=&quot;<a target="_blank" rel="noopener" href="https://www.example.com"&gt;https//www.example.com&lt;/a">https://www.example.com&quot;&gt;https://www.example.com&lt;/a</a>&gt;</p>
-<p>&lt;a href=&quot;mailto:<a href="mailto:&#101;&#x78;&#x61;&#x6d;&#112;&#108;&#x65;&#x40;&#x65;&#109;&#97;&#105;&#x6c;&#x2e;&#99;&#x6f;&#109;">example@email.com</a>&quot;&gt;<a href="mailto:&#x65;&#x78;&#97;&#x6d;&#x70;&#108;&#101;&#64;&#x65;&#x6d;&#x61;&#105;&#x6c;&#46;&#x63;&#111;&#x6d;">example@email.com</a>&lt;/a&gt;</code></pre></div><br>    </div><br>  </div><br>  <div class="demo-result"><br>    <h4>渲染效果</h4><br>    <p><a target="_blank" rel="noopener" href="https://github.com">GitHub</a></p><br>    <p><a target="_blank" rel="noopener" href="https://github.com" title="世界最大的代码托管平台">GitHub</a></p><br>    <p><a target="_blank" rel="noopener" href="https://www.example.com">https://www.example.com</a></p><br>    <p><a href="mailto:example@email.com">example@email.com</a></p><br>  </div></p>
+<p>&lt;a href=&quot;mailto:<a href="mailto:&#101;&#x78;&#97;&#109;&#x70;&#x6c;&#x65;&#64;&#101;&#x6d;&#x61;&#x69;&#108;&#x2e;&#99;&#x6f;&#109;">example@email.com</a>&quot;&gt;<a href="mailto:&#101;&#120;&#97;&#x6d;&#x70;&#108;&#x65;&#x40;&#x65;&#109;&#x61;&#x69;&#108;&#x2e;&#99;&#111;&#x6d;">example@email.com</a>&lt;/a&gt;</code></pre></div><br>    </div><br>  </div><br>  <div class="demo-result"><br>    <h4>渲染效果</h4><br>    <p><a target="_blank" rel="noopener" href="https://github.com">GitHub</a></p><br>    <p><a target="_blank" rel="noopener" href="https://github.com" title="世界最大的代码托管平台">GitHub</a></p><br>    <p><a target="_blank" rel="noopener" href="https://www.example.com">https://www.example.com</a></p><br>    <p><a href="mailto:example@email.com">example@email.com</a></p><br>  </div></p>
 </div>
 
 <h3 id="6-2-参考链接"><a href="#6-2-参考链接" class="headerlink" title="6.2 参考链接"></a>6.2 参考链接</h3><div class="demo-box">
@@ -796,12 +825,12 @@ function greet(name) &#123;
   <div class="code-comparison">
     <div class="code-markdown">
       <h4>Markdown语法</h4>
-      <div class="code-wrapper"><pre><code class="hljs">![替代文本](image.jpg)
+      <div class="code-wrapper"><pre><code class="hljs">![替代文本](https://placehold.co/150x100?text=示例图片)
 
-<p><img src="/image.jpg" srcset="/img/loading.gif" lazyload alt="替代文本" title="图片标题"></p>
-<p><a target="_blank" rel="noopener" href="https://example.com/"><img src="/image.jpg" srcset="/img/loading.gif" lazyload alt="图片链接"></a></code></pre></div><br>    </div><br>    <div class="code-html"><br>      <h4>对应HTML</h4><br>      <div class="code-wrapper"><pre><code class="hljs">&lt;img src=&quot;image.jpg&quot; alt=&quot;替代文本&quot;&gt;</p>
-<p>&lt;img src=&quot;image.jpg&quot; alt=&quot;替代文本&quot; title=&quot;图片标题&quot;&gt;</p>
-<p>&lt;a href=&quot;<a target="_blank" rel="noopener" href="https://example.com/">https://example.com</a>&quot;&gt;<br>  &lt;img src=&quot;image.jpg&quot; alt=&quot;图片链接&quot;&gt;<br>&lt;/a&gt;</code></pre></div><br>    </div><br>  </div></p>
+<p><img src="https://placehold.co/200x150?text=%E5%B8%A6%E6%A0%87%E9%A2%98%E5%9B%BE%E7%89%87" srcset="/img/loading.gif" lazyload alt="替代文本" title="图片标题"></p>
+<p><a target="_blank" rel="noopener" href="https://example.com/"><img src="https://placehold.co/100x100?text=%E5%8F%AF%E7%82%B9%E5%87%BB" srcset="/img/loading.gif" lazyload alt="图片链接"></a></code></pre></div><br>    </div><br>    <div class="code-html"><br>      <h4>对应HTML</h4><br>      <div class="code-wrapper"><pre><code class="hljs">&lt;img src=&quot;<a target="_blank" rel="noopener" href="https://placehold.co/150x100?text=%E7%A4%BA%E4%BE%8B%E5%9B%BE%E7%89%87">https://placehold.co/150x100?text=示例图片</a>&quot; alt=&quot;替代文本&quot;&gt;</p>
+<p>&lt;img src=&quot;<a target="_blank" rel="noopener" href="https://placehold.co/200x150?text=%E5%B8%A6%E6%A0%87%E9%A2%98%E5%9B%BE%E7%89%87">https://placehold.co/200x150?text=带标题图片</a>&quot; alt=&quot;替代文本&quot; title=&quot;图片标题&quot;&gt;</p>
+<p>&lt;a href=&quot;<a target="_blank" rel="noopener" href="https://example.com/">https://example.com</a>&quot;&gt;<br>  &lt;img src=&quot;<a target="_blank" rel="noopener" href="https://placehold.co/100x100?text=%E5%8F%AF%E7%82%B9%E5%87%BB">https://placehold.co/100x100?text=可点击</a>&quot; alt=&quot;图片链接&quot;&gt;<br>&lt;/a&gt;</code></pre></div><br>    </div><br>  </div><br>  <div class="demo-result"><br>    <h4>渲染效果 (占位图)</h4><br>    <p><img src="https://placehold.co/150x100?text=示例图片" srcset="/img/loading.gif" lazyload alt="替代文本"></p><br>    <p><img src="https://placehold.co/200x150?text=带标题图片" srcset="/img/loading.gif" lazyload alt="替代文本" title="图片标题"></p><br>    <p><a target="_blank" rel="noopener" href="https://example.com"><img src="https://placehold.co/100x100?text=可点击" srcset="/img/loading.gif" lazyload alt="图片链接"></a></p><br>  </div></p>
 </div>
 
 <h3 id="7-2-参考图片"><a href="#7-2-参考图片" class="headerlink" title="7.2 参考图片"></a>7.2 参考图片</h3><div class="demo-box">
@@ -811,13 +840,13 @@ function greet(name) &#123;
       <h4>Markdown语法</h4>
       <div class="code-wrapper"><pre><code class="hljs">![Logo][logo]
 
-<p><img src="/photo.jpg%3C/code%3E%3C/pre%3E" srcset="/img/loading.gif" lazyload alt="另一张图片"></p>
+<p><img src="https://placehold.co/180x120?text=%E7%85%A7%E7%89%87%3C/code%3E%3C/pre%3E" srcset="/img/loading.gif" lazyload alt="另一张图片"></p>
 <pre><code class="hljs">&lt;/div&gt;
 &lt;div class=&quot;code-html&quot;&gt;
   &lt;h4&gt;对应HTML&lt;/h4&gt;
-  &lt;pre&gt;&lt;code&gt;&amp;lt;img src=&quot;logo.png&quot; alt=&quot;Logo&quot; title=&quot;公司Logo&quot;&amp;gt;
+  &lt;pre&gt;&lt;code&gt;&amp;lt;img src=&quot;https://placehold.co/120x80?text=Logo&quot; alt=&quot;Logo&quot; title=&quot;公司Logo&quot;&amp;gt;
 </code></pre></div>
-<p>&lt;img src&#x3D;”photo.jpg” alt&#x3D;”另一张图片”&gt;</code></pre><br>    </div><br>  </div></p>
+<p>&lt;img src&#x3D;”<a target="_blank" rel="noopener" href="https://placehold.co/180x120?text=%E7%85%A7%E7%89%87">https://placehold.co/180x120?text=照片</a>“ alt&#x3D;”另一张图片”&gt;</code></pre><br>    </div><br>  </div><br>  <div class="demo-result"><br>    <h4>渲染效果 (占位图)</h4><br>    <p><img src="https://placehold.co/120x80?text=Logo" srcset="/img/loading.gif" lazyload alt="Logo" title="公司Logo"></p><br>    <p><img src="https://placehold.co/180x120?text=照片" srcset="/img/loading.gif" lazyload alt="另一张图片"></p><br>  </div></p>
 </div>
 
 <h2 id="8-表格"><a href="#8-表格" class="headerlink" title="8. 表格"></a>8. 表格</h2><div class="demo-box">
@@ -1005,7 +1034,11 @@ function greet(name) &#123;
   </div>
 </div>
 
-<h2 id="13-HTML标签"><a href="#13-HTML标签" class="headerlink" title="13. HTML标签"></a>13. HTML标签</h2><p>Markdown支持在文档中直接使用HTML标签。</p>
+<h2 id="13-HTML标签"><a href="#13-HTML标签" class="headerlink" title="13. HTML标签"></a>13. HTML标签</h2><p>Markdown支持在文档中直接使用HTML标签。这为你提供了更大的灵活性来控制内容的显示和结构。</p>
+<div class="tip-box">
+💡 <strong>提示：</strong> 你可以直接在Markdown文件中使用HTML注释 <code>&lt;!-- 这是一个注释 --&gt;</code>。这些注释在最终渲染的HTML中通常不可见，可以用来给自己或其他编辑者留下笔记。
+</div>
+
 <div class="demo-box">
   <div class="demo-title">HTML标签演示</div>
   <div class="code-comparison">
@@ -1253,13 +1286,6 @@ graph TD
   <a href="/categories/%E7%BC%96%E7%A8%8B/" class="category-chain-item">编程</a>
   
   
-    <span>></span>
-    
-  <a href="/categories/%E7%BC%96%E7%A8%8B/%E5%B7%A5%E5%85%B7/" class="category-chain-item">工具</a>
-  
-  
-
-  
 
       </span>
     
@@ -1273,10 +1299,6 @@ graph TD
       <i class="iconfont icon-tags"></i>
       
         <a href="/tags/%E8%AF%AD%E6%B3%95%E6%95%99%E7%A8%8B/" class="print-no-link">#语法教程</a>
-      
-        <a href="/tags/Markdown/" class="print-no-link">#Markdown</a>
-      
-        <a href="/tags/%E6%96%87%E6%A1%A3%E7%BC%96%E5%86%99/" class="print-no-link">#文档编写</a>
       
     </div>
   
